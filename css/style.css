@@ -131,6 +131,69 @@ button {
   left: 240px;
 }
 
+/* about */
+.about {
+  background-color: #a5978e;
+  padding: 50px 0;
+  color: #fafafa;
+}
+
+.about__inner {
+  display: flex;
+  align-items: center;
+}
+
+.about__content {
+  min-width: 370px;
+}
+
+.about__title {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+.about__text {
+  margin-bottom: 15px;
+}
+
+.about__list {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 20px;
+  align-items: center;
+  padding-left: 110px;
+  padding-bottom: 48px;
+  position: relative;
+}
+
+.about__list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/about-decor.png);
+  width: 22px;
+  height: 30px;
+}
+
+.about__list::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  bottom: 13px;
+  background-color: #7b6152;
+  width: 200%;
+  height: 1px;
+}
+
+.about__item-img {
+  margin-bottom: 10px;
+}
+
+.about__item-text {
+  font-size: 11px;
+}
+
 .footer {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -175,6 +238,14 @@ button {
 
   .top__text {
     margin-bottom: 30px;
+  }
+
+  .about__content {
+    min-width: 300px;
+  }
+
+  .about__list {
+    padding-left: 20px;
   }
 }
 
@@ -227,6 +298,44 @@ button {
 
   .top__img {
     left: 180px;
+  }
+
+  .about__content {
+    min-width: 200px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .about__title {
+    margin-bottom: 20px;
+  }
+
+  .about__list {
+    gap: 10px;
+    margin-left: 27px;
+    margin-bottom: 33px;
+  }
+
+  .about__item-text {
+    font-size: 6px;
+  }
+
+  .about__item-img {
+    margin-bottom: 6px;
+  }
+
+  .about__item-img--1 {
+    width: 120px;
+  }
+
+  .about__item-img--2 {
+    width: 190px;
+  }
+
+  .about__item-img--3 {
+    width: 120px;
   }
 }
 
@@ -317,9 +426,42 @@ button {
     font-size: 10px;
     padding: 14px 41px;
   }
+
+  .about__content {
+    min-width: 170px;
+  }
+
+  .about__inner {
+    align-items: center;
+  }
+
+  .about__list {
+    align-items: flex-end;
+    gap: 5px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+  }
+
+  .about__item-text {
+    display: none;
+  }
+
+  .about__item-img--1,
+  .about__item-img--3 {
+    width: 80px;
+  }
+
+  .about__item-img--2 {
+    width: 140px;
+  }
 }
 
 @media (max-width: 360px) {
+  .body {
+    font-size: 8px;
+  }
+
   .top__img {
     left: 167px;
     left: auto;
@@ -341,5 +483,29 @@ button {
 
   .top__text {
     font-size: 10px;
+  }
+
+  .about__content {
+    min-width: 233px;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .about {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  .about__list {
+    gap: 15px;
+    padding-left: 12px;
+    padding-bottom: 30px;
+    margin-left: 12px;
+  }
+
+  .about__item-img--2 {
+    display: none;
   }
 }
