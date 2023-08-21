@@ -398,6 +398,10 @@ button {
     gap: 30px 16px;
   }
 
+  .steps__title {
+    font-size: 30px;
+  }
+
   .steps__list {
     gap: 25px 35px;
   }
@@ -413,6 +417,10 @@ button {
 
   .steps__item-text {
     font-size: 8px;
+  }
+
+  .steps__item::before {
+    font-size: 20px;
   }
 }
 
@@ -661,6 +669,24 @@ button {
   .section__content-descr {
     padding-bottom: 62px;
   }
+
+  .steps__list {
+    gap: 25px 40px;
+  }
+}
+
+@media (max-width: 404px) {
+  .steps__list {
+    gap: 20px 25px;
+  }
+
+  .steps__item {
+    gap: 16px;
+  }
+
+  .steps__item-img {
+    width: 66px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -748,5 +774,9 @@ button {
 
   .products__item-text {
     margin-bottom: 16px;
+  }
+
+  .steps__item-text {
+    font-size: 6px;
   }
 }
