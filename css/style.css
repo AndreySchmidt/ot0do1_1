@@ -122,6 +122,7 @@ button {
   margin-bottom: 15px;
   font-size: 40px;
   font-weight: 400;
+  font-family: "Yeseva One", cursive;
 }
 
 .button {
@@ -431,10 +432,10 @@ button {
 }
 
 .feedback__content .swiper-pagination {
-bottom: 50px;
+  bottom: 50px;
 }
 
-.swiper-pagination-bullet  {
+.swiper-pagination-bullet {
   background-color: #bea495;
   width: 53px;
   height: 4px;
@@ -447,7 +448,21 @@ bottom: 50px;
 }
 
 .certificates__slider {
-  width: 760px;
+  width: 1135px;
+  overflow: hidden;
+}
+
+.certificates__descr {
+  margin-right: 20px;
+}
+
+.certificates__content {
+  padding-bottom: 114px;
+}
+
+.certificates__content .swiper-pagination {
+  bottom: 60px;
+  text-align: left;
 }
 
 .footer {
@@ -533,6 +548,26 @@ bottom: 50px;
 
   .team__content {
     gap: 30px 20px;
+  }
+
+  .feedback__inner {
+    grid-template-columns: 260px auto;
+  }
+
+  .feedback__slider {
+    width: 690px;
+  }
+
+  .certificates__content img {
+    width: 280px;
+  }
+
+  .certificates__slider {
+    width: 860px;
+  }
+
+  .certificates__content .swiper-pagination {
+    text-align: center;
   }
 }
 
@@ -730,6 +765,19 @@ bottom: 50px;
   .team__item-descr {
     font-size: 7px;
   }
+
+  .feedback__item-video,
+  .feedback__item-img {
+    width: 200px;
+  }
+
+  .feedback__slider {
+    width: 447px;
+  }
+
+  .feedback__item-content {
+    padding-bottom: 45px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -881,6 +929,14 @@ bottom: 50px;
 
   .team {
     margin-bottom: 50px;
+  }
+
+  .certificates__content img {
+    width: 200px;
+  }
+
+  .certificates__slider {
+    width: 420px;
   }
 }
 
