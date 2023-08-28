@@ -465,6 +465,99 @@ button {
   text-align: left;
 }
 
+.accordeon {
+
+}
+
+.accordeon__item {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.accordeon__title {
+  
+}
+
+.accordeon__text {
+
+}
+
+.promo {
+  background-image: url(../images/promo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+}
+
+.promo__inner {
+  display: flex;
+  /* gap: 110px; */
+  align-items: center;
+}
+
+.promo__text {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Yeseva One", cursive;
+  padding-left: 56px;
+  max-width: 865px;
+  margin-right: 110px;
+}
+
+.promo__link {
+  color: #272727;
+  background-color: #ffbd59;
+  padding: 14px 25px 12px;
+  /* min-width: 175px; */
+}
+
+.contacts {
+  padding: 150px 0 50px;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  background-color: #fff;
+  width: 664px;
+  padding: 75px 42px 67px;
+}
+
+.form__title {
+  font-family: "Yeseva One", cursive;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.form__input {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  padding: 7px 10px;
+  color: #000;
+}
+
+.form__input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Comfortaa", cursive;
+  color: #b3b3b3;
+}
+
+.form__btn {
+  color: #272727;
+  margin-top: 36px;
+}
+
 .footer {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -568,6 +661,14 @@ button {
 
   .certificates__content .swiper-pagination {
     text-align: center;
+  }
+
+  .promo__text {
+    padding-left: 0;
+  }
+
+  .contacts__img {
+    width: 335px;
   }
 }
 
@@ -778,6 +879,37 @@ button {
   .feedback__item-content {
     padding-bottom: 45px;
   }
+
+  .promo {
+    padding: 67px 0;
+  }
+
+  .promo__text {
+    font-size: 15px;
+  }
+
+  .promo__link {
+    font-size: 12px;
+  }
+
+  .contacts__img {
+    width: 187px;
+    object-fit: cover;
+  }
+
+  .form {
+    width: 440px;
+    padding: 30px 22px;
+  }
+
+  .form__title {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .form__btn {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -937,6 +1069,23 @@ button {
 
   .certificates__slider {
     width: 420px;
+    margin: 0 auto;
+  }
+
+  .promo {
+    padding: 42px 0;
+  }
+
+  .contacts {
+    padding-top: 50px;
+  }
+
+  .contacts__img {
+    display: none;
+  }
+
+  .form__input::placeholder {
+    font-size: 10px;
   }
 }
 
@@ -1079,5 +1228,40 @@ button {
   .courses__item,
   .courses__item img {
     width: 255px;
+  }
+
+  .feedback__item {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+
+  .feedback__slider {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .feedback__item-video {
+    width: 250px;
+  }
+
+  .feedback__item-img {
+    width: 250px;
+    margin: 0 auto 20px;
+  }
+
+  .feedback__item-btn {
+    max-width: 100px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+
+  .certificates__slider {
+    width: 200px;
+  }
+
+  .promo__text {
+    margin-right: 50px;
   }
 }

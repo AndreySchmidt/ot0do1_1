@@ -29,21 +29,21 @@ const feedbackSwiper = new Swiper(".feedback__slider", {
 
 const certSwiper = new Swiper(".certificates__slider", {
   loop: true,
-  slidesPerView: 3,
+  // slidesPerView: 3,
   spaseBetween: 20,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
   },
   breakpoints: {
-    480: {
-      slidesPerView: 2,
-    },
     360: {
       slidesPerView: 1,
     },
-    // 500: {
-    //   slidesPerView: 3,
-    // },
+    480: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 3,
+    },
   },
 });
