@@ -47,3 +47,14 @@ const certSwiper = new Swiper(".certificates__slider", {
     },
   },
 });
+
+const accordeon = document.querySelector(".accordeon");
+const accordeonTitles = accordeon.querySelectorAll(".accordeon__title");
+
+accordeonTitles.forEach.call(accordeonTitles, function (title) {
+  title.addEventListener("click", function () {
+    const currentText = title.parentElement.querySelector(".accordeon__text");
+    title.classList.toggle("accordeon__title--active");
+    currentText.classList.toggle("accordeon__text--active");
+  });
+});
